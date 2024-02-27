@@ -3,48 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Document</title>
+    <title>Consulta de Alunos</title>
 </head>
 <body>
 
-<div class="boxMaior">
+
     <div class="header">
-        <h2>Consulta de Alunos - Projeto Guri</h2>
+        <h1>Consulta de Alunos - Projeto Guri</h1>
     </div>
 
     <div class="boxMedia">
         <div class="pesquisa">
             <span>Código do aluno</span> | 
             <input type="number" id="idAluno"/>
-            <button class="btn" onclick="clicarBotao()">Pesquisar</button>
+            <button class="btn" onclick="clicarBotao()"><img src="./img/pesquisar.svg"/></button>
         </div>
-<br>
+        <br>
         <hr>
-<br>
+        <br>
         <div class="informacoesAluno">
             <div>
-                <span>Nome do Aluno</span>
-                <input type="text" id="nome" readonly>
+                <div class="nomeAluno">
+                    <span>Nome do Aluno:</span>
+                    <input type="text" id="nome" readonly>
+                </div>
             </div>
-            <div>
-                <span>Data de Nascimento</span>
-                <input type="text" id="dataNascimento" readonly>
-            </div>
-            <div>
-                <span>Data de Início</span>
-                <input type="text" id="dataInicio" readonly>
-            </div>
-            <div>
-                <span>Código da Turma</span>
-                <input type="text" id="turma" readonly>
+            <div class="informacoes">
+                <div >
+                    <span>Data de Nascimento:</span>
+                    <input type="text" id="dataNascimento" readonly>
+                </div>
+                <div>
+                    <span>Data de Início:</span>
+                    <input type="text" id="dataInicio" readonly>
+                </div>
+                <div>
+                    <span>Código da Turma:</span>
+                    <input type="number" id="turma" readonly>
+                </div>
             </div>
         </div>
 
+        <br>
 
+        <div class="informacoesTurma">
+            <div>
+                <div class="nomeProfessor">
+                    <span>Professor(a) Responsável:</span>
+                    <input type="text" id="professor" readonly>
+                </div>
+            </div>
+            <div class="aulas">
+                <div>
+                    <span>Instrumento:</span>
+                    <input type="text" id="instrumento" readonly>
+                </div>
+                <div>
+                    <span>Turno:</span>
+                    <input type="text" id="turno" readonly>
+                </div>
+            </div>
+        </div>
+<br><br>
+        <div class="clear">
+            <button onclick="limparDados()">Limpar</button>
+        </div>
 
     </div>
-</div>
+
     
 </body>
 

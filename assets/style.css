@@ -1,31 +1,194 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: content-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem;
+    }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10rem;
-}
+    .header {
+        display: flex;
+        background-color: rgb(245, 233, 62);
+        height: 4.5rem;
+        width: 45rem;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
 
-.boxMaior {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    width: 30rem;
-    height: 40rem;
-    border: solid 1px black;
-}
+    .header h1 {
+        font-size: 500;
+        font-weight: bold;
+    }
+    
+    .boxMedia {
+        display: flex;
+        flex-direction: column;
+        border: dashed 3px rgb(245, 233, 62);
+        width: 40.6rem;
+        height: 25rem;
+        padding: 2rem;
+        gap:.4rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
 
-.informacoesAluno {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .75rem;
-}
+    .pesquisa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .75rem;
+    }
+
+    .pesquisa span {
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+        appearance: none;
+    }
+   
+    .pesquisa input {
+        width: 6rem;
+        height: 1.75rem;
+        border-radius: .5rem;
+        outline: none;
+        border-width: 1px;
+        padding-left: .5rem;
+        font-size: large;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 2rem;
+        background-color: rgb(39, 39, 39);
+        border: none;
+        outline: none;
+        border-radius: .5rem;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(211, 211, 211);
+        border: solid 1px rgb(39, 39, 39);
+    }
+
+    .btn img {
+        display: flex;
+        height: 30px;
+    }
+
+    .informacoesAluno {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .nomeAluno{
+        display: flex;
+        align-items: center;
+        gap: .4rem;
+    }
+
+    .nomeAluno input {
+        width: 30rem;
+        height: 1.5rem;
+        border-radius: .3rem;
+        border-width: 1px;
+        padding-left: .3rem;
+        font-size: 15px;
+    }
+
+    .informacoes {
+        display: flex;
+        width: auto;
+        gap: 3rem; 
+    }
+
+    .informacoes input {
+        border-radius: .3rem;
+        border-width: 1px;
+        width: 10.5rem;
+        height: 1.5rem;
+        padding-left: .3rem;
+        font-size: 15px;
+    }
+
+    .informacoes div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacoesTurma {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.75rem;
+    }
+
+    .nomeProfessor {
+        display: flex;
+        gap: .4rem;
+    }
+
+    .nomeProfessor input {
+        width: 25rem;
+        height: 1.5rem;
+        border-radius: .3rem;
+        border-width: 1px;
+        padding-left: .3rem;
+        font-size: 15px;
+    }
+
+    .aulas {
+        display: flex;
+        width: auto;
+        gap: 4rem;
+    }
+
+    .aulas input {
+        width: 13rem;
+        border-radius: .3rem;
+        border-width: 1px;
+        height: 1.5rem;
+        padding-left: .3rem;
+        font-size: 15px;
+    }
+
+    .clear {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clear button {
+        width: 6rem;
+        height: 2rem;
+        background-color: rgb(39, 39, 39);
+        color: rgb(253, 253, 78);
+        font-size: large;
+        border-radius: .5rem;
+        cursor: pointer;
+    }
